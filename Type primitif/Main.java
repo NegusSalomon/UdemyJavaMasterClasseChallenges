@@ -11,7 +11,7 @@ public class Main {
         int varInt = 9999999;
 
         /* Transtypage automatique car les variables sont de type hiérarchiquement inférieur et
-        ne nécessiten donc pas de transtypage manuel */
+        ne nécessitent donc pas de transtypage manuel */
         long resultat = 50000L + 10L * ( varByte + varShort + varInt );
         System.out.println(resultat);
     }
