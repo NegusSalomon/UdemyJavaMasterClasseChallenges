@@ -17,22 +17,19 @@
 
 public class Challenge1 {
     public static void main(String[] args) {
-        String playerName = "Sébastien";
-        int playerPosition = 43;
-        int playerScore = 1500;
-        System.out.println(displayHighScorePosition(playerName, playerPosition));
-        System.out.println(calculateHighScorePosition(playerScore));
-        playerScore = 900;
-        System.out.println(calculateHighScorePosition(playerScore));
-        playerScore = 400;
-        System.out.println(calculateHighScorePosition(playerScore));
-        playerScore = 50;
-        System.out.println(calculateHighScorePosition(playerScore));
+        int highScore = calculateHighScorePosition(1500);
+        displayHighScorePosition("Sebastien", highScore);
+        highScore = calculateHighScorePosition(900);
+        displayHighScorePosition("Carole", highScore);
+        highScore = calculateHighScorePosition(400);
+        displayHighScorePosition("Gabriel", highScore);
+        highScore = calculateHighScorePosition(50);
+        displayHighScorePosition("Anna", highScore);
+
     }
 
-    public static String displayHighScorePosition(String name, int position){
-        String message = name + " managed to get into position " + position + " on the high score table";
-        return message;
+    public static void displayHighScorePosition(String name, int position){
+        System.out.println(name + " managed to get into position " + position + " on the high score table");
     }
 
     public static int calculateHighScorePosition(int score){
