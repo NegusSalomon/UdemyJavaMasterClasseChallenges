@@ -39,8 +39,7 @@ public class Challenge1 {
             return 2;
         } else if (score >= 100){
             return 3;
-        } else {
-            return 4;
         }
+        return 4;
     }
 }
